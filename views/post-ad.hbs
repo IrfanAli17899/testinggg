@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KHAREEDLO | POST ADS</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/animat.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" sizes="72x72" href="images/icons/icon-72x72.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="images/icons/icon-144x144.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/icons/icon-512x512.png">	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="PWAGram">
+	<link rel="apple-touch-icon" href="images/icons/icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="images/icons/icon-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" href="images/icons/icon-128x128.png" sizes="128x128">
+	<link rel="apple-touch-icon" href="images/icons/icon-114x114.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="images/icons/icon-152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192">  
+	<link rel="apple-touch-icon" href="images/icons/icon-384x384.png" sizes="384x384">
+	<link rel="apple-touch-icon" href="images/icons/icon-512x512.png" sizes="512x512">  
+	<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#3f51b5">
+
+</head>
+
+<body>
+		<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="logo">
+								<a href="index.html">
+									<img src="images/logo.png" class="animated fadeInLeft" style="width:300px;"  alt="">
+							</div>
+						</div>
+						<div class="col-sm-6"></div>
+						<div class="header-right">
+							<a class="account animated fadeInLeft" href="login.html" id="logIn">My Account</a>
+							<div id="user" class="text-center"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-banner banner text-center animated fadeIn img-responsive img-fluid" style="max-width: 100%;height: auto;">
+				
+				
+			</div>
+	<!-- Submit Ad -->
+	<div class="submit-ad main-grid-border">
+		<div class="container animated fadeIn">
+			<h2 class="head">Post Your Ad</h2>
+			<div class="post-ad-form">
+				<form action="javaScript:void(0)" onsubmit="return postAd()" id="postForm">
+					<label>Select Category
+						<span>*</span>
+					</label>
+					<select name="category" required>
+						<option value="mobiles">Mobiles</option>
+						<option value="electronicsAppliances">Electronics and Appliances</option>
+						<option value="cars">Cars</option>
+						<option value="bikes">Bikes</option>
+						<option value="furniture">Furniture</option>
+						<option value="realEstate">Real, Estate</option>
+					</select>
+					<div class="clearfix"></div>
+					<label>Title For Your Ad
+						<span>*</span>
+					</label>
+					<input type="text" class="phone" name="title" required placeholder="Add Title To Your Ad">
+					<div class="clearfix"></div>
+					<label>Model Of Your Ad
+						<span>*</span>
+					</label>
+					<input type="text" class="phone" name="model" required placeholder="Add Model Of Your Ad">
+					<div class="clearfix"></div>
+					<label> Description Of Ad
+						<span>*</span>
+					</label>
+					<textarea class="mess" name="description" required placeholder="Write few lines about your product"></textarea>
+					<div class="clearfix"></div>
+					<label>Price For Your Ad
+						<span>*</span>
+					</label>
+					<input type="text" class="phone" name="price" required placeholder="Add Price To Your Ad In PKR">
+					<div class="clearfix"></div>
+					<div class="upload-ad-photos">
+						Photo for your ad:
+						<div style="text-align:center">
+							<img src="images/upload.png" style="width:280px;" alt="" id="picShow">
+							<input type="file" name="photoSelect" style="display:none" onchange="showImg('picShow','photoSelect')" id="photoSelect">
+							<div>
+								<input type="button" class="btn btn-success" style="width:150px;" name="" value="Browse" id="browse" onclick="document.querySelector('#photoSelect').click()">
+							</div>
+						</div>
+						<br>
+						<div id="submitbutton">
+							<input type="submit" id="SignSub" value="Post">
+						</div>
+				</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- // Submit Ad -->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="foo-grids">
+					<div class="col-md-9 footer-grid">
+						<h4 class="footer-head">Who We Are</h4>
+						<p style="text-align:justify;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+							layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking
+							at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when
+							looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a
+							page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content
+							of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable
+							content .
+						</p>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4 class="footer-head">Contact Us</h4>
+						<span class="hq">Our headquarters</span>
+						<address>
+							<ul class="location">
+								<li>
+									<span class="glyphicon glyphicon-map-marker"></span>
+								</li>
+								<li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
+								<div class="clearfix"></div>
+							</ul>
+							<ul class="location">
+								<li>
+									<span class="glyphicon glyphicon-earphone"></span>
+								</li>
+								<li>+0 561 111 235</li>
+								<div class="clearfix"></div>
+							</ul>
+							<ul class="location">
+								<li>
+									<span class="glyphicon glyphicon-envelope"></span>
+								</li>
+								<li>
+									<a href="mailto:info@example.com">mail@example.com</a>
+								</li>
+								<div class="clearfix"></div>
+							</ul>
+						</address>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html">
+						<img src="images/logo.png" style="width:300px;"  alt="">
+						</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li>
+							<a class="facebook" href="#">
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a class="twitter" href="#">
+								<span>Twitter</span>
+							</a>
+						</li>
+
+						<li>
+							<a class="googleplus" href="#">
+								<span>Google+</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2018 Resale. All Rights Reserved | IRFAN ALI
+						<a href="index.html">KHAREEDLO</a>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</footer>
+	<!--footer section end-->
+
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCoaRqFgdUu6D_IZ9XZ_ag8J4lc0kRZYYs",
+			authDomain: "developer-irfanali-olx-17899.firebaseapp.com",
+			databaseURL: "https://developer-irfanali-olx-17899.firebaseio.com",
+			projectId: "developer-irfanali-olx-17899",
+			storageBucket: "developer-irfanali-olx-17899.appspot.com",
+			messagingSenderId: "716478877040"
+		};
+		firebase.initializeApp(config);
+		
+	</script>
+	<script>const url = '{{ url }}';</script>
+	<script src="js/ad.js"></script>
+</body>
+
+</html>
